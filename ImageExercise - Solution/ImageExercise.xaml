@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Black" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloWorld.ImageExercise">
+	<AbsoluteLayout>
+		<Image x:Name="image"
+			AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
+		<ActivityIndicator Color="White" IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
+			AbsoluteLayout.LayoutBounds="0.5, 0.05, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+		<Button Image="left.png" Clicked="Previous_Clicked" 
+			AbsoluteLayout.LayoutBounds="0.05, 0.05, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+		<Button Image="right.png" Clicked="Next_Clicked"
+			AbsoluteLayout.LayoutBounds="0.95, 0.05, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+	</AbsoluteLayout>
+</ContentPage>

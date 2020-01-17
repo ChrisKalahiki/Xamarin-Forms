@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	Title="{Binding Name}" 
+	Padding="20"
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+	x:Class="InstagramApp.UserProfilePage">
+	<StackLayout>
+		<Label 
+			Text="{Binding Name}" 
+			FontSize="12" 
+			FontAttributes="Bold"
+			/>		
+		<ic:CircleImage 
+			WidthRequest="60"
+			HeightRequest="60"
+			Aspect="AspectFill"
+			HorizontalOptions="Start"
+			Source="{Binding ImageUrl}" />
+		<Label 
+			Text="{Binding Description}" 
+			TextColor="Gray"
+			FontSize="12" 
+			/>		
+	</StackLayout>
+</ContentPage>

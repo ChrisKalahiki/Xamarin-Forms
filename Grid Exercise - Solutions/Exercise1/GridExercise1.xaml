@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="#354242" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloWorld.GridExercise1">
+	<Grid RowSpacing="10" ColumnSpacing="10" Padding="40">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="2*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<Label Grid.Row="0" Grid.ColumnSpan="3" Text="1234" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50"></Label>
+		
+		<Button BorderRadius="30" Grid.Row="1" Grid.Column="0" Text="1" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+		<Button BorderRadius="30" Grid.Row="1" Grid.Column="1" Text="2" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+		<Button BorderRadius="30" Grid.Row="1" Grid.Column="2" Text="3" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+
+		<Button BorderRadius="30" Grid.Row="2" Grid.Column="0" Text="4" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+		<Button BorderRadius="30" Grid.Row="2" Grid.Column="1" Text="5" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+		<Button BorderRadius="30" Grid.Row="2" Grid.Column="2" Text="6" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+
+		<Button BorderRadius="30" Grid.Row="3" Grid.Column="0" Text="7" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+		<Button BorderRadius="30" Grid.Row="3" Grid.Column="1" Text="8" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+		<Button BorderRadius="30" Grid.Row="3" Grid.Column="2" Text="9" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+
+		<Button BorderRadius="30" Grid.Row="4" Grid.Column="1" Text="0" FontSize="30" TextColor="#28282c" BackgroundColor="#fff" />
+
+		<Button BorderRadius="30" Grid.Row="5" Grid.ColumnSpan="3" Text="Dial" FontSize="30" TextColor="#28282c" BackgroundColor="#96ca2d" />
+	</Grid>
+</ContentPage>
